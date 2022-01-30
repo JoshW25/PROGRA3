@@ -385,7 +385,7 @@ public class ventana1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarActionPerformed
-        resul.setText("");
+        
         vista.setText("");
         
         
@@ -443,18 +443,24 @@ public class ventana1 extends javax.swing.JFrame {
 
     private void btndiviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndiviActionPerformed
         // TODO add your handling code here:
-        addNumber("/");
+          this.primernumero=Float.parseFloat(this.vista.getText());
+       this.operadornumero="/";
+       this.vista.setText("");
         
     }//GEN-LAST:event_btndiviActionPerformed
 
     private void btnrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrestaActionPerformed
         // TODO add your handling code here:
-        addNumber("-");
+        this.primernumero=Float.parseFloat(this.vista.getText());
+       this.operadornumero="-";
+       this.vista.setText("");
     }//GEN-LAST:event_btnrestaActionPerformed
 
     private void btnporActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnporActionPerformed
         // TODO add your handling code here:
-       
+         this.primernumero=Float.parseFloat(this.vista.getText());
+       this.operadornumero="*";
+       this.vista.setText("");
        
     }//GEN-LAST:event_btnporActionPerformed
 
@@ -467,12 +473,16 @@ public class ventana1 extends javax.swing.JFrame {
 
     private void btn_senActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_senActionPerformed
         // TODO add your handling code here:
-        addNumber("^");
+         this.primernumero=Float.parseFloat(this.vista.getText());
+       this.operadornumero="^";
+       this.vista.setText("");
     }//GEN-LAST:event_btn_senActionPerformed
 
     private void btn_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cosActionPerformed
         // TODO add your handling code here:
-        addNumber("%");
+          this.primernumero=Float.parseFloat(this.vista.getText());
+       this.operadornumero="%";
+       this.vista.setText("");
     }//GEN-LAST:event_btn_cosActionPerformed
 
     private void btn_tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tanActionPerformed
@@ -484,7 +494,18 @@ public class ventana1 extends javax.swing.JFrame {
       this.segundonumero=Float.parseFloat(this.vista.getText());
       
       switch(this.operadornumero){
-          case "+": this.vista.setText(Float.toString(this.primernumero+this.segundonumero));
+          case "+": this.vista.setText(Float.toString(this.primernumero+this.segundonumero));break;
+          case "-": this.vista.setText(Float.toString(this.primernumero-this.segundonumero));break;
+          case "*": this.vista.setText(Float.toString(this.primernumero*this.segundonumero));break;
+          case "/": this.vista.setText(Float.toString(this.primernumero/this.segundonumero));break;
+          case "^": 
+              double elevado = Math.pow(this.primernumero,this.segundonumero);
+              this.vista.setText(String.valueOf(elevado));
+              
+                
+                  
+                  ;break;
+          case "%": this.vista.setText(Float.toString(this.primernumero%this.segundonumero));break;
       }
            // TODO add your handling code here:
 
