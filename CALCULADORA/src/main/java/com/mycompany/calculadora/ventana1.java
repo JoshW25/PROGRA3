@@ -5,8 +5,16 @@
 package com.mycompany.calculadora;
 
 
-public class ventana1 extends javax.swing.JFrame {
 
+
+
+public class ventana1 extends javax.swing.JFrame {
+    public float primernumero;
+    public float segundonumero;
+    public String operadornumero;
+    
+    
+   
     
     public ventana1() {
         initComponents();
@@ -19,13 +27,13 @@ public class ventana1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton19 = new javax.swing.JButton();
+        vista = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         borrar = new javax.swing.JButton();
         btndivi = new javax.swing.JButton();
         btnpor = new javax.swing.JButton();
         btnsuma = new javax.swing.JButton();
         btnresta = new javax.swing.JButton();
-        btnigual = new javax.swing.JButton();
         btn_sen = new javax.swing.JButton();
         btn_cos = new javax.swing.JButton();
         btn_tan = new javax.swing.JButton();
@@ -39,9 +47,8 @@ public class ventana1 extends javax.swing.JFrame {
         btn7 = new javax.swing.JButton();
         btn8 = new javax.swing.JButton();
         btn9 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        resul = new javax.swing.JLabel();
-        vista = new javax.swing.JLabel();
 
         jButton19.setBackground(new java.awt.Color(0, 255, 255));
         jButton19.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
@@ -57,6 +64,12 @@ public class ventana1 extends javax.swing.JFrame {
         setResizable(false);
         setType(java.awt.Window.Type.POPUP);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        vista.setBackground(new java.awt.Color(0, 153, 153));
+        vista.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 30)); // NOI18N
+        vista.setForeground(new java.awt.Color(51, 51, 51));
+        vista.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        getContentPane().add(vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 330, 50));
 
         jPanel2.setBackground(new java.awt.Color(25, 27, 40));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -141,26 +154,10 @@ public class ventana1 extends javax.swing.JFrame {
         });
         jPanel2.add(btnresta, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 50, 50));
 
-        btnigual.setBackground(new java.awt.Color(0, 255, 255));
-        btnigual.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
-        btnigual.setForeground(new java.awt.Color(51, 51, 51));
-        btnigual.setText("=");
-        btnigual.setBorderPainted(false);
-        btnigual.setFocusPainted(false);
-        btnigual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnigual.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
-        btnigual.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
-        btnigual.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnigualActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnigual, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 50, 50));
-
         btn_sen.setBackground(new java.awt.Color(0, 255, 255));
         btn_sen.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
         btn_sen.setForeground(new java.awt.Color(51, 51, 51));
-        btn_sen.setText("Sen");
+        btn_sen.setText("^");
         btn_sen.setBorderPainted(false);
         btn_sen.setFocusPainted(false);
         btn_sen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -176,7 +173,7 @@ public class ventana1 extends javax.swing.JFrame {
         btn_cos.setBackground(new java.awt.Color(0, 255, 255));
         btn_cos.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
         btn_cos.setForeground(new java.awt.Color(51, 51, 51));
-        btn_cos.setText("cos");
+        btn_cos.setText("%");
         btn_cos.setBorderPainted(false);
         btn_cos.setFocusPainted(false);
         btn_cos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -192,7 +189,7 @@ public class ventana1 extends javax.swing.JFrame {
         btn_tan.setBackground(new java.awt.Color(0, 255, 255));
         btn_tan.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
         btn_tan.setForeground(new java.awt.Color(51, 51, 51));
-        btn_tan.setText("tan");
+        btn_tan.setText(".");
         btn_tan.setBorderPainted(false);
         btn_tan.setFocusPainted(false);
         btn_tan.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -365,21 +362,23 @@ public class ventana1 extends javax.swing.JFrame {
         });
         jPanel2.add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 50, 50));
 
+        jButton1.setBackground(new java.awt.Color(0, 153, 153));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton1.setText("=");
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 50, 50));
+
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 360, 350));
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        resul.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 35)); // NOI18N
-        resul.setForeground(new java.awt.Color(51, 51, 51));
-        resul.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel1.add(resul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 340, 50));
-
-        vista.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 18)); // NOI18N
-        vista.setForeground(new java.awt.Color(51, 51, 51));
-        vista.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel1.add(vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 340, 30));
-
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 140));
 
         pack();
@@ -442,14 +441,10 @@ public class ventana1 extends javax.swing.JFrame {
         addNumber("0");
     }//GEN-LAST:event_btn0ActionPerformed
 
-    private void btnigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnigualActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_btnigualActionPerformed
-
     private void btndiviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndiviActionPerformed
         // TODO add your handling code here:
         addNumber("/");
+        
     }//GEN-LAST:event_btndiviActionPerformed
 
     private void btnrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrestaActionPerformed
@@ -459,28 +454,45 @@ public class ventana1 extends javax.swing.JFrame {
 
     private void btnporActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnporActionPerformed
         // TODO add your handling code here:
-        addNumber("x");
+       
+       
     }//GEN-LAST:event_btnporActionPerformed
 
     private void btnsumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsumaActionPerformed
         // TODO add your handling code here:
-        addNumber("+");
+       this.primernumero=Float.parseFloat(this.vista.getText());
+       this.operadornumero="+";
+       this.vista.setText("");
     }//GEN-LAST:event_btnsumaActionPerformed
 
     private void btn_senActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_senActionPerformed
         // TODO add your handling code here:
-        addNumber("sen ");
+        addNumber("^");
     }//GEN-LAST:event_btn_senActionPerformed
 
     private void btn_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cosActionPerformed
         // TODO add your handling code here:
-        addNumber("cos ");
+        addNumber("%");
     }//GEN-LAST:event_btn_cosActionPerformed
 
     private void btn_tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tanActionPerformed
         // TODO add your handling code here:
-        addNumber("tan ");
+        addNumber(".");
     }//GEN-LAST:event_btn_tanActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+      this.segundonumero=Float.parseFloat(this.vista.getText());
+      
+      switch(this.operadornumero){
+          case "+": this.vista.setText(Float.toString(this.primernumero+this.segundonumero));
+      }
+           // TODO add your handling code here:
+
+          
+        
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
      
     public static void main(String args[]) {
@@ -514,8 +526,8 @@ public class ventana1 extends javax.swing.JFrame {
             }
         });
     }
-    public void addNumber (String numero){
-        vista.setText(vista.getText()+numero);
+    public void addNumber(String digito){
+        vista.setText(vista.getText()+digito);
     }
             
 
@@ -535,14 +547,13 @@ public class ventana1 extends javax.swing.JFrame {
     private javax.swing.JButton btn_sen;
     private javax.swing.JButton btn_tan;
     private javax.swing.JButton btndivi;
-    private javax.swing.JButton btnigual;
     private javax.swing.JButton btnpor;
     private javax.swing.JButton btnresta;
     private javax.swing.JButton btnsuma;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton19;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel resul;
     private javax.swing.JLabel vista;
     // End of variables declaration//GEN-END:variables
 }
