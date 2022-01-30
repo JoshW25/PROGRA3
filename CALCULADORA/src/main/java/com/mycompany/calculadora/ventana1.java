@@ -26,18 +26,276 @@ public class ventana1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jButton19 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jButton19.setBackground(new java.awt.Color(0, 255, 255));
+        jButton19.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(51, 51, 51));
+        jButton19.setText("=");
+        jButton19.setBorderPainted(false);
+        jButton19.setFocusPainted(false);
+        jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton19.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton19.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        setType(java.awt.Window.Type.POPUP);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(25, 27, 40));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setBackground(new java.awt.Color(0, 255, 255));
+        jButton1.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
+        jButton1.setText("C");
+        jButton1.setBorderPainted(false);
+        jButton1.setFocusPainted(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 50, 50));
+
+        jButton2.setBackground(new java.awt.Color(0, 255, 255));
+        jButton2.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(51, 51, 51));
+        jButton2.setText("/");
+        jButton2.setBorderPainted(false);
+        jButton2.setFocusPainted(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 50, 50));
+
+        jButton3.setBackground(new java.awt.Color(0, 255, 255));
+        jButton3.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(51, 51, 51));
+        jButton3.setText("x");
+        jButton3.setBorderPainted(false);
+        jButton3.setFocusPainted(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 50, 50));
+
+        jButton4.setBackground(new java.awt.Color(0, 255, 255));
+        jButton4.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(51, 51, 51));
+        jButton4.setText("+");
+        jButton4.setBorderPainted(false);
+        jButton4.setFocusPainted(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton4.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 50, 50));
+
+        jButton5.setBackground(new java.awt.Color(0, 255, 255));
+        jButton5.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(51, 51, 51));
+        jButton5.setText("-");
+        jButton5.setBorderPainted(false);
+        jButton5.setFocusPainted(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 50, 50));
+
+        jButton6.setBackground(new java.awt.Color(0, 255, 255));
+        jButton6.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(51, 51, 51));
+        jButton6.setText("=");
+        jButton6.setBorderPainted(false);
+        jButton6.setFocusPainted(false);
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 50, 50));
+
+        jButton7.setBackground(new java.awt.Color(0, 255, 255));
+        jButton7.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(51, 51, 51));
+        jButton7.setText("Sen");
+        jButton7.setBorderPainted(false);
+        jButton7.setFocusPainted(false);
+        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton7.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton7.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 70, 50));
+
+        jButton8.setBackground(new java.awt.Color(0, 255, 255));
+        jButton8.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(51, 51, 51));
+        jButton8.setText("cos");
+        jButton8.setBorderPainted(false);
+        jButton8.setFocusPainted(false);
+        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton8.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton8.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 70, 50));
+
+        jButton9.setBackground(new java.awt.Color(0, 255, 255));
+        jButton9.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(51, 51, 51));
+        jButton9.setText("tan");
+        jButton9.setBorderPainted(false);
+        jButton9.setFocusPainted(false);
+        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton9.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton9.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 70, 50));
+
+        jButton10.setBackground(new java.awt.Color(0, 255, 255));
+        jButton10.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(51, 51, 51));
+        jButton10.setText("0");
+        jButton10.setBorderPainted(false);
+        jButton10.setFocusPainted(false);
+        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton10.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton10.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 70, 50));
+
+        jButton11.setBackground(new java.awt.Color(0, 255, 255));
+        jButton11.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(51, 51, 51));
+        jButton11.setText("1");
+        jButton11.setBorderPainted(false);
+        jButton11.setFocusPainted(false);
+        jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton11.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton11.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 50, 50));
+
+        jButton12.setBackground(new java.awt.Color(0, 255, 255));
+        jButton12.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(51, 51, 51));
+        jButton12.setText("2");
+        jButton12.setBorderPainted(false);
+        jButton12.setFocusPainted(false);
+        jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton12.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton12.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 50, 50));
+
+        jButton13.setBackground(new java.awt.Color(0, 255, 255));
+        jButton13.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(51, 51, 51));
+        jButton13.setText("3");
+        jButton13.setBorderPainted(false);
+        jButton13.setFocusPainted(false);
+        jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton13.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton13.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 50, 50));
+
+        jButton14.setBackground(new java.awt.Color(0, 255, 255));
+        jButton14.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(51, 51, 51));
+        jButton14.setText("4");
+        jButton14.setBorderPainted(false);
+        jButton14.setFocusPainted(false);
+        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton14.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton14.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 50, 50));
+
+        jButton15.setBackground(new java.awt.Color(0, 255, 255));
+        jButton15.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(51, 51, 51));
+        jButton15.setText("5");
+        jButton15.setBorderPainted(false);
+        jButton15.setFocusPainted(false);
+        jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton15.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton15.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 50, 50));
+
+        jButton16.setBackground(new java.awt.Color(0, 255, 255));
+        jButton16.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(51, 51, 51));
+        jButton16.setText("6");
+        jButton16.setBorderPainted(false);
+        jButton16.setFocusPainted(false);
+        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton16.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton16.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 50, 50));
+
+        jButton17.setBackground(new java.awt.Color(0, 255, 255));
+        jButton17.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(51, 51, 51));
+        jButton17.setText("7");
+        jButton17.setBorderPainted(false);
+        jButton17.setFocusPainted(false);
+        jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton17.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton17.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 50, 50));
+
+        jButton18.setBackground(new java.awt.Color(0, 255, 255));
+        jButton18.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(51, 51, 51));
+        jButton18.setText("8");
+        jButton18.setBorderPainted(false);
+        jButton18.setFocusPainted(false);
+        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton18.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton18.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 50, 50));
+
+        jButton20.setBackground(new java.awt.Color(0, 255, 255));
+        jButton20.setFont(new java.awt.Font("Franklin Gothic Book", 0, 36)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(51, 51, 51));
+        jButton20.setText("9");
+        jButton20.setBorderPainted(false);
+        jButton20.setFocusPainted(false);
+        jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton20.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn1.png")); // NOI18N
+        jButton20.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\movi2\\progra3\\PROGRA3\\CALCULADORA\\src\\img\\btn2.png")); // NOI18N
+        jPanel2.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 50, 50));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 360, 350));
+
+        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 35)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 340, 50));
+
+        jLabel2.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("jLabel1");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 340, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 140));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -78,5 +336,29 @@ public class ventana1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
