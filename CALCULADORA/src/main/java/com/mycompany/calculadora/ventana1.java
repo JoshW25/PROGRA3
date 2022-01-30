@@ -40,7 +40,6 @@ public class ventana1 extends javax.swing.JFrame {
         btn8 = new javax.swing.JButton();
         btn9 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        resul = new javax.swing.JLabel();
         vista = new javax.swing.JLabel();
 
         jButton19.setBackground(new java.awt.Color(0, 255, 255));
@@ -160,7 +159,7 @@ public class ventana1 extends javax.swing.JFrame {
         btn_sen.setBackground(new java.awt.Color(0, 255, 255));
         btn_sen.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
         btn_sen.setForeground(new java.awt.Color(51, 51, 51));
-        btn_sen.setText("Sen");
+        btn_sen.setText("^");
         btn_sen.setBorderPainted(false);
         btn_sen.setFocusPainted(false);
         btn_sen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -176,7 +175,7 @@ public class ventana1 extends javax.swing.JFrame {
         btn_cos.setBackground(new java.awt.Color(0, 255, 255));
         btn_cos.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
         btn_cos.setForeground(new java.awt.Color(51, 51, 51));
-        btn_cos.setText("cos");
+        btn_cos.setText("%");
         btn_cos.setBorderPainted(false);
         btn_cos.setFocusPainted(false);
         btn_cos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -192,7 +191,7 @@ public class ventana1 extends javax.swing.JFrame {
         btn_tan.setBackground(new java.awt.Color(0, 255, 255));
         btn_tan.setFont(new java.awt.Font("Franklin Gothic Book", 0, 18)); // NOI18N
         btn_tan.setForeground(new java.awt.Color(51, 51, 51));
-        btn_tan.setText("tan");
+        btn_tan.setText(".");
         btn_tan.setBorderPainted(false);
         btn_tan.setFocusPainted(false);
         btn_tan.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -367,18 +366,13 @@ public class ventana1 extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 360, 350));
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        resul.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 35)); // NOI18N
-        resul.setForeground(new java.awt.Color(51, 51, 51));
-        resul.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel1.add(resul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 340, 50));
-
-        vista.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 18)); // NOI18N
+        vista.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 30)); // NOI18N
         vista.setForeground(new java.awt.Color(51, 51, 51));
         vista.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel1.add(vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 340, 30));
+        jPanel1.add(vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 340, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 140));
 
@@ -469,17 +463,17 @@ public class ventana1 extends javax.swing.JFrame {
 
     private void btn_senActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_senActionPerformed
         // TODO add your handling code here:
-        addNumber("sen ");
+        addNumber("^ ");
     }//GEN-LAST:event_btn_senActionPerformed
 
     private void btn_cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cosActionPerformed
         // TODO add your handling code here:
-        addNumber("cos ");
+        addNumber("% ");
     }//GEN-LAST:event_btn_cosActionPerformed
 
     private void btn_tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tanActionPerformed
         // TODO add your handling code here:
-        addNumber("tan ");
+        addNumber(".");
     }//GEN-LAST:event_btn_tanActionPerformed
 
      
@@ -542,7 +536,6 @@ public class ventana1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton19;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel resul;
     private javax.swing.JLabel vista;
     // End of variables declaration//GEN-END:variables
 }
