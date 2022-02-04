@@ -1,0 +1,66 @@
+e081769 x2
+bc465d5 suma
+b275f25 Cambio de diseño
+8e9031b SUMA
+9326aee agregando numeros
+ca32863 uniendo
+eb9197e agregando
+c5811da interfaz Grafica Completa
+d755bda INICIO PROYECTO CALCULADORA
+
+commit e081769dab6fcaa3af90d764465373040fbfcf2c (HEAD -> main)
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 16:08:14 2022 -0600
+
+    x2
+
+commit bc465d5af092c286fe55fcc9841b8ca6ac9be251
+Merge: b275f25 8e9031b
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 16:05:36 2022 -0600
+
+    suma
+
+commit b275f25a5151238e0ec4b6c9abedfcd30cb4612a (origin/main)
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 15:59:02 2022 -0600
+
+    Cambio de diseño
+
+commit 8e9031ba15a4c9d1e24958f65f35886160c2b8e6 (origin/Funsuma, Funsuma)
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 15:53:00 2022 -0600
+
+    SUMA
+
+commit 9326aeea12596e970c48448453914301171dddfa
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 14:31:16 2022 -0600
+
+    agregando numeros
+
+commit ca3286366bbc9ee8f665aa8a3c590f2bb1f7374b
+Merge: eb9197e c5811da
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 13:57:08 2022 -0600
+
+    uniendo
+
+commit eb9197e6bb84a5a9881e6ee58c896f72ecf991e4
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 13:50:20 2022 -0600
+
+    agregando
+
+commit c5811dade5a5e5064911f10276107fdd4b6c4224 (origin/Grafico, Grafico)
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Sun Jan 30 13:46:55 2022 -0600
+
+    interfaz Grafica Completa
+
+commit d755bdaae7ae3be11f317ff7734ff73df743802b
+Author: Josue Villeda <07123jm@gmail.com>
+Date:   Fri Jan 28 12:07:32 2022 -0600
+
+    INICIO PROYECTO CALCULADORA
+
