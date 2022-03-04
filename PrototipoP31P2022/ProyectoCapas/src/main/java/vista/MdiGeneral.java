@@ -63,10 +63,10 @@ public class MdiGeneral extends javax.swing.JFrame {
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 281, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Archivo");
+        jMenu1.setText("Archivos");
 
         jMenu3.setText("Mantenimientos");
         jMenu3.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +87,7 @@ public class MdiGeneral extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Menus");
+        jMenu2.setText("Josue moran 9959-20-1641");
 
         jMenu5.setText("Abrir");
         jMenu5.addActionListener(new java.awt.event.ActionListener() {
@@ -171,7 +171,7 @@ public class MdiGeneral extends javax.swing.JFrame {
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
-        MantenimientoVendedores ventana = new MantenimientoVendedores();
+        MantenimientoCatalogo ventana = new MantenimientoCatalogo();
         jDesktopPane1.add(ventana);
         Dimension desktopSize = jDesktopPane1.getSize();
         Dimension FrameSize = ventana.getSize();

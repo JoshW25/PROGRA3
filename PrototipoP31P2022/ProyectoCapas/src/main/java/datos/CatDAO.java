@@ -20,10 +20,10 @@ import java.util.List;
 public class CatDAO {
 
     private static final String SQL_SELECT = "SELECT codigo_producto, Nombre_producto, Precio_producto FROM catalogo";
-    private static final String SQL_INSERT = "INSERT INTO aplicaciones(Nombre_producto, Precio_producto) VALUES(?, ?)";
-    private static final String SQL_UPDATE = "UPDATE catalogo SET Nombre_producto=?, Precio_producto=? WHERE coido_producto = ?";
-    private static final String SQL_DELETE = "DELETE FROM catalogo WHERE coido_producto=?";
-    private static final String SQL_QUERY = "SELECT coido_producto, Nombre_producto, Precio_producto FROM catalogo WHERE coido_producto = ?";
+    private static final String SQL_INSERT = "INSERT INTO catalogo(Nombre_producto, Precio_producto) VALUES(?, ?)";
+    private static final String SQL_UPDATE = "UPDATE catalogo SET Nombre_producto=?, Precio_producto=? WHERE codigo_producto = ?";
+    private static final String SQL_DELETE = "DELETE FROM catalogo WHERE codigoo_producto=?";
+    private static final String SQL_QUERY = "SELECT codigo_producto, Nombre_producto, Precio_producto FROM catalogo WHERE codigo_producto = ?";
 
     public List<Vendedor> select() {
         Connection conn = null;

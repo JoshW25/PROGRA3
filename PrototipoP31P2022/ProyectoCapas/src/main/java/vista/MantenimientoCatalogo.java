@@ -5,9 +5,9 @@
  */
 package vista;
 
-import datos.EmpleadoDAO;
-import datos.VendedorDAO;
-import domain.Empleado;
+
+import datos.CatDAO;
+
 import domain.Vendedor;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
@@ -17,7 +17,7 @@ import java.io.File;
  *
  * @author visitante
  */
-public class MantenimientoVendedores extends javax.swing.JInternalFrame {
+public class MantenimientoCatalogo extends javax.swing.JInternalFrame {
 
     public void llenadoDeCombos() {
      /*   EmpleadoDAO empleadoDAO = new EmpleadoDAO();
@@ -25,15 +25,15 @@ public class MantenimientoVendedores extends javax.swing.JInternalFrame {
         cbox_empleado.addItem("Seleccione una opción");
         for (int i = 0; i < empleados.size(); i++) {
             cbox_empleado.addItem(empleados.get(i).getNombreEmpleado());
-        }
-    }*/
+        }*/
+    }
 
     public void llenadoDeTablas() {
         DefaultTableModel modelo = new DefaultTableModel();
         modelo.addColumn("CodigoProducto");
         modelo.addColumn("nombreProducto");
         modelo.addColumn("PrecioProdcuto");
-        VendedorDAO vendedorDAO = new VendedorDAO();
+        CatDAO vendedorDAO = new CatDAO();
         List<Vendedor> vendedores = vendedorDAO.select();
         tablaVendedores.setModel(modelo);
         String[] dato = new String[3];
@@ -48,14 +48,14 @@ public class MantenimientoVendedores extends javax.swing.JInternalFrame {
 
     public void buscarVendedor() {
         Vendedor vendedorAConsultar = new Vendedor();
-        VendedorDAO vendedorDAO = new VendedorDAO();
+        CatDAO CatDAO = new CatDAO();
        
-        vendedorAConsultar = vendedorDAO.query(vendedorAConsultar);
+        vendedorAConsultar = CatDAO.query(vendedorAConsultar);
         txtNombre.setText(vendedorAConsultar.getNombreVendedor());
         txtDireccion.setText(vendedorAConsultar.getDireVendedor());
     }
 
-    public MantenimientoVendedores() {
+    public MantenimientoCatalogo() {
         initComponents();
         llenadoDeTablas();
         llenadoDeCombos();
@@ -257,7 +257,7 @@ public class MantenimientoVendedores extends javax.swing.JInternalFrame {
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
-        VendedorDAO vendedorDAO = new VendedorDAO();
+        CatDAO vendedorDAO = new CatDAO();
         Vendedor vendedorAEliminar = new Vendedor();
        
         vendedorDAO.delete(vendedorAEliminar);
@@ -265,7 +265,7 @@ public class MantenimientoVendedores extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-        VendedorDAO vendedorDAO = new VendedorDAO();
+        CatDAO vendedorDAO = new CatDAO();
         Vendedor vendedorAInsertar = new Vendedor();
         vendedorAInsertar.setNombreVendedor(txtNombre.getText());
         vendedorAInsertar.setDireVendedor(txtDireccion.getText());
@@ -280,7 +280,7 @@ public class MantenimientoVendedores extends javax.swing.JInternalFrame {
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
 //        // TODO add your handling code here:
-        VendedorDAO vendedorDAO = new VendedorDAO();
+        CatDAO vendedorDAO = new CatDAO();
         Vendedor vendedorAActualizar = new Vendedor();
        
         vendedorAActualizar.setNombreVendedor(txtNombre.getText());
